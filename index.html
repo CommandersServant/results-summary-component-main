@@ -8,7 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="public/style.css">
-  <script src="public/main.js"></script>
+  <script src="public/getScores.js" defer></script>
+  <script src="public/main.js" defer></script>
 
   <title>Frontend Mentor | Results summary component</title>
 
@@ -20,10 +21,10 @@
     <div id="result-card">
       <h2 id="result-header">Your Result</h2>
       <div id="result">
-        <p id="result-score"><span id="score">76</span> <br> <span id="full-score">of 100 </span></p>
+        <p id="result-score"><span id="score"></span> <br> <span id="full-score">of 100 </span></p>
       </div>
       <h2 id="score-remark">Great</h2>
-      <p id="score-comparison">You scored higher than 65% of <br> the people who have taken <br> these tests.</p>
+      <p id="score-comparison">You scored higher than <span id="percentage">65%</span> of <br> the people who have taken <br> these tests.</p>
     </div>
 
     <div id="summary-card">
@@ -32,25 +33,25 @@
       <div class="summary-container" id="reaction-container">
         <img id="reaction-image" class="icon" src="public/assets/images/icon-reaction.svg" alt="">
         <p class="summary-reaction">Reaction</p>
-        <span class="score">80 <span class="summary-score-denominator">/ 100</span></span>
+        <span class="score"><span id="reaction-score"></span><span class="summary-score-denominator"> / 100</span></span>
       </div>
 
       <div class="summary-container" id="memory-container">
         <img id="memory-image" class="icon" src="public/assets/images/icon-memory.svg" alt="">
         <p class="summary-memory">Memory </p>
-        <span class="score">92 <span class="summary-score-denominator">/ 100</span></span>
+        <span class="score"><span id="memory-score"></span><span class="summary-score-denominator"> / 100</span></span>
       </div>
 
       <div class="summary-container" id="verbal-container">
         <img id="verbal-image" class="icon" src="public/assets/images/icon-verbal.svg" alt="">
         <p class="summary-verbal">Verbal </p>
-        <span class="score">61 <span class="summary-score-denominator">/ 100</span></span>
+        <span class="score"><span id="verbal-score"></span><span class="summary-score-denominator"> / 100</span></span>
       </div>
 
       <div class="summary-container" id="visual-container"><img id="visual-image" class="icon"
           src="public/assets/images/icon-visual.svg" alt="">
         <p class="summary-visual">Visual </p>
-        <span class="score">72 <span class="summary-score-denominator">/ 100</span></span>
+        <span class="score"><span id="visual-score"></span><span class="summary-score-denominator"> / 100</span></span>
       </div>
 
       <button>Continue</button>
